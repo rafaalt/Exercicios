@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaActivity"
+    android:orientation="vertical"
+    android:background="@color/mainColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você está na Segunda Tela!"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="240dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ir para Terceira Tela"
+        android:textColor="@color/mainColor"
+        android:backgroundTint="@color/white"
+        android:id="@+id/btnSegActivity"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

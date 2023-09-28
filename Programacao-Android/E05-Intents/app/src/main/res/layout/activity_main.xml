@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/texto"
+        android:text="Rafael Assunçao"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/fotoPerfil"
+        android:id="@+id/txtNome"/>
+    <TextView
+        style="@style/texto"
+        android:text="19 anos"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/fotoPerfil"
+        android:layout_below="@id/txtNome"
+        android:id="@+id/txtIdade"/>
+    <TextView
+        android:text="Email:"
+        style="@style/texto"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fotoPerfil"
+        android:id="@+id/emailPadrao"/>
+    <TextView
+        android:text="rafaaslat@gmail.com"
+        style="@style/texto"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fotoPerfil"
+        android:layout_toRightOf="@+id/emailPadrao"
+        android:id="@+id/txtEmail"/>
+    <TextView
+        android:text="Telefone:"
+        style="@style/texto"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/emailPadrao"
+        android:id="@+id/telPadrao"/>
+    <TextView
+        style="@style/texto"
+        android:text="3198466490"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/telPadrao"
+        android:layout_below="@id/txtEmail"
+        android:id="@+id/txtTelefone"/>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/fotopadrao"
+        android:layout_gravity="center"
+        android:id="@+id/fotoPerfil"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leitor Código de Barras"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtTelefone"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnLeitor"/>
+
+    <TextView
+        style="@style/texto"
+        android:text="Resultado: "
+        android:layout_below="@id/btnLeitor"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:id="@+id/resPadrao"/>
+
+    <TextView
+        style="@style/texto"
+        android:text="Tipo Lido: "
+        android:layout_below="@id/resPadrao"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:id="@+id/tipoLidoPadrao"/>
+
+    <TextView
+        style="@style/texto"
+        android:layout_toRightOf="@id/resPadrao"
+        android:text=""
+        android:layout_below="@id/btnLeitor"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darkGray"
+        android:id="@+id/txtResultadoLeitor"/>
+
+    <TextView
+        style="@style/texto"
+        android:layout_toRightOf="@id/tipoLidoPadrao"
+        android:text=""
+        android:layout_below="@id/resPadrao"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darkGray"
+        android:id="@+id/txtTipoLeitor"/>
+
+</RelativeLayout>
